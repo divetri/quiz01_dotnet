@@ -14,7 +14,7 @@
                 int guess = Convert.ToInt32(Console.ReadLine());
                 if (guess == x)
                 {
-                    Console.WriteLine("Well done! The answer was " + x + "Lanjut?");
+                    Console.WriteLine("Tebakan kamu benar, angka yang ditebak " + x + "Tebak lagi?");
                     string next = Console.ReadLine();
                     if (next == "y" | next == "Y")
                     {

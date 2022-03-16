@@ -62,77 +62,13 @@
         {
             Console.Write("Enter numbers: ");
             int number = Convert.ToInt32(Console.ReadLine());
-            if (number / 1 > 10)
+            int digit = 1;
+            while (number/10 > 0)
             {
-                if (number / 10 > 10)
-                {
-                    if (number / 100 > 10)
-                    {
-                        if (number / 1000 > 10)
-                        {
-                            if (number / 10000 > 10)
-                            {
-                                if (number / 100000 > 10)
-                                {
-                                    if (number / 1000000 > 10)
-                                    {
-                                        if (number / 10000000 > 10)
-                                        {
-                                            if (number / 100000000 > 10)
-                                            {
-                                                if (number / 1000000000 > 10)
-                                                {
-                                                    Console.WriteLine("Total digit : 11");
-                                                }
-                                                else
-                                                {
-                                                    Console.WriteLine("Total digit : 10");
-                                                }
-                                            }
-                                            else
-                                            {
-                                                Console.WriteLine("Total digit : 9");
-                                            }
-                                        }
-                                        else
-                                        {
-                                            Console.WriteLine("Total digit : 8");
-                                        }
-                                    }
-                                    else
-                                    {
-                                        Console.WriteLine("Total digit : 7");
-                                    }
-                                }
-                                else
-                                {
-                                    Console.WriteLine("Total digit : 6");
-                                }
-                            }
-                            else
-                            {
-                                Console.WriteLine("Total digit : 5");
-                            }
-                        }
-                        else
-                        {
-                            Console.WriteLine("Total digit : 4");
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine("Total digit : 3");
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("Total digit : 2");
-                }
+                digit++;
+                number /= 10;
             }
-            else
-            {
-                Console.WriteLine("Total digit : 1");
-            }
+            Console.WriteLine(digit);
         }
         public static void Soal4()
         {
